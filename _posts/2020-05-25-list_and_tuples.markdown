@@ -4,6 +4,7 @@ title:  "list and tuple"
 date:   2020-05-25 14:56:26 +0100
 permalink: chapter1
 author: "Sachin Soman"
+comments: true
 ---
 Python `tuple` and `list` are really interesting if we don't keep a keen eye 
 on the documentation, we may miss several important fine prints.
