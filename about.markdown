@@ -10,5 +10,5 @@ You can find the source code for Blog at GitHub:
 
 [Github](https://github.com/sachsom95/Python_blog)
 
-Also, Do check out my Networks blog [GetGooDatNetworks](https://github.com/sachsom95/Networks_blog)
+Also, Do check out my Networks blog [Get Good At Networks](https://sachsom95.github.io/Networks_blog/)
 
