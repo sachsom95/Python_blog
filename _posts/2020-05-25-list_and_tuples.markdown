@@ -6,9 +6,9 @@ permalink: chapter1
 author: "Sachin Soman"
 comments: true
 ---
-Python `tuple` and `list` are really interesting if we don't keep a keen eye 
+Python `tuple` and `list` are really interesting, if we don't keep a keen eye 
 on the documentation, we may miss several important fine prints.
-I will in this page not include the common stuff only things I see as stuff that I may forget will be here
+I will in this page not include the common stuff only those things I see as stuff that I may forget will be presented.
 
 First lets initialize a `list`
 {% highlight ruby %}
@@ -53,9 +53,9 @@ nothing new there
 <hr>
 <br>
 <h1>Tuples</h1>
-Tuples are really interesting and I have some interesting observations which I like to share including how `kwargs` in functions work.
+Tuples are really interesting and I have some important observations which I would like to share including how `kwargs` in functions work.
 
-Tuple has a lot of similarity with a list as in data can be accessed, sliced and of course, it is ordered; The major difference between list and tuple
+Tuple has a lot of similarity with a list as in data can be accessed, sliced and of course, like data in list it is ordered; The major difference between list and tuple
 is that tuple is immutable and is much faster than a list. The access times will only matter in large data and in most trivial situations the access time shouldn't matter much.
 
 
@@ -114,8 +114,8 @@ is same as
 (a,b,c) = x
 {% endhighlight %}
 
-In such situations python doesn't care for the `()` parentheses. This is an important observation as well when we discuss 
-stuff later in section. 
+In such situations python doesn't care for the `()` parentheses. This is an important observation when we discuss 
+stuff later in the section. 
 With this new found observation lets look at one more example
 {% highlight ruby %}
 x = 1,2,3,4
@@ -123,7 +123,7 @@ type(x)
 Output:tuple
 {% endhighlight %}
 
-So here we assigned a tuple with out the need for a `parantheses`. With that we might be able recognize the the famous example
+So here we assigned a tuple without the need for a `parantheses`. With that we might be able recognize the the famous example
 everyone gives to show how easy python is. `swapping elements without a temporary variable`
 
 {% highlight ruby %}
@@ -136,8 +136,10 @@ Output: 1
 {% endhighlight %}
 This is because we used tuples without parentheses and tuple unpacking. I know `MIND == BLOWN!!`
 <hr>
+
+
 <h3>*args</h3>
-Now Now I need to show one more thing that I need to show you before I conclude this blog. Infact it all come down to this
+Now I need to show one more thing  before I conclude this blog. Infact it all come down to this<br>
 *insert drumrolls...*
 
 Remember that in python there are functions where we can enter as many paramenters as we want like `max(1,2,3,4,5,6,7)` and get a result.
@@ -165,7 +167,7 @@ print(c)
 Output: [3,4,5]
 {% endhighlight %}
 
-Here we see that when I used `*` on variable c the tuple elements gets gets added to c as a list and I can now iterate through it. Pretty neat!.
+Here we see that when I used `*` on variable c the tuple elements gets  added to c as a list and I can now iterate through it. Pretty neat!.
 This is known as unpacking of tuple.
 lets look at some more examples
 
@@ -208,7 +210,7 @@ and therefore we can iterate through the args like we would on a normal tuple or
 With this information, we can now make methods which can have a varying number of parameters. 
 
 These are some of the interesting observations I had while studying about tuples and list. If I made some egregious mistakes do send me a mail
-or comment Also do check out my other blogs as well
+or put a pull request on my repo. Also do check out my other blogs as well links in About section :)
 
 <h4>Reference</h4>
 -  [RealPython](https://realpython.com)
