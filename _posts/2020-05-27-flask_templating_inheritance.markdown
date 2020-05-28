@@ -100,6 +100,82 @@ python YOUR_FLASK_APP.py
    
 We get to run the app directly. This is not the recommended way when we bring the app into production.
 
+Now that we have the app running we will go into the next important topic in Flask templating
+<br>
+<br>
 
+## Templating
+<hr>
+<br>
+Templating is by far the most important feature when we are making a flask app. Whats the point of designing 
+fancy website if you can't render them. Rendering a template in flask is the act of displaying a pre-made web page with essential 
+information filled in by flask. Now how is this useful?. Lets look at an example.
 
-MORE STUFF COMMING SOooooooNNN!
+   {% highlight ruby %}
+   from flask import Flask
+   app = Flask(__name__)
+   @app.route('/')
+   def hello_world():
+       return '<h1>Hello, World!</h1>'
+       
+   if __ name __ == __ main __:
+        app.run()
+   {% endhighlight %}
+   
+   If we run this example we can see a website with Hello,World rendered in an <h1> tag is rendered. But a normal website is not that
+   simple it can have thousands of lines of markdown, javascript , css and other dependencies. Dont get me wrong you can definitly put
+   all the website code into a return statement. Like this.
+   
+   {% highlight ruby %}
+   from flask import Flask
+   app = Flask(__name__)
+   @app.route('/')
+   def hello_world():
+       return '<!DOCTYPE html>
+               <html lang="en">
+               <head>
+               <title>Page Title</title>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
+               <style>
+               body {
+                 font-family: Arial, Helvetica, sans-serif;
+               }
+               </style>
+               </head>
+               <body>
+               
+               <h1>My Website</h1>
+               <p>A website created by me.</p>
+               
+               </body>
+               </html>'
+       
+   if __ name __ == __ main __:
+        app.run()
+   {% endhighlight %}  
+   
+ But you will be called a psychopath by your co-workers. Coding like this is inefficent, not reusable, prone to errors and
+ difficult to maintain. Instead we use the concept of templates. In templating we make the html file to render in a seprate folder called
+ `templates`. After that we can use the following code.
+ 
+   {% highlight ruby %}
+   from flask import Flask, render_template
+   app = Flask(__name__)
+   @app.route('/')
+   def hello_world():
+       render_template('YOUR_HTML_FILE.html')
+       
+   if __ name __ == __ main __:
+        app.run()
+   {% endhighlight %}
+  
+ Flask will go into the `templates` folder look for the html file and renders it. Now you can see how we made the website 
+ much more maintainable by using the template technique. One thing to not before using the command `render_template()` is to 
+ import `render_template` from flask package as shown in first line of the example.
+ 
+ Rendering just a static site is not that useful we need a website to be dynamic this can be achived with template rendering as well.
+ For this lets take an another example.
+ 
+ 
+ MORE STUFF COMMING SOONN :)!!!
