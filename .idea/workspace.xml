@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fd50f961-0985-4f70-9968-ea418d8bb715" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2020-05-27-flask_templating_inheritance.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-05-27-flask_templating_inheritance.markdown" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590415034054</updated>
       <workItem from="1590415035313" duration="13586000" />
-      <workItem from="1590592342219" duration="9082000" />
+      <workItem from="1590592342219" duration="9395000" />
     </task>
     <servers />
   </component>
