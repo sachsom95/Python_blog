@@ -123,6 +123,7 @@ These are some of the interesting observations I had while studying about `__str
 or put a pull request on my repo. Also do check out my other blogs as well links in About section :)
 
 <h4>Reference</h4>
--  [RealPython](https://realpython.com)
--  [PythonDocs](https://docs.python.org/3/tutorial/datastructures.html)
+-  [PythonDocs](https://docs.python.org/3/library/stdtypes.html)
+-  [stack overflow](https://stackoverflow.com/questions/7784148/understanding-repr-function-in-python)
+-  [Dan Barders Amazing blog](https://dbader.org/blog/python-repr-vs-str)
 -  UCD Python programing class
