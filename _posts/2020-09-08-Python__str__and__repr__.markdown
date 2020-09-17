@@ -172,4 +172,5 @@ or put a pull request on my repo. Also, do check out my other blogs as well link
 -  [PythonDocs](https://docs.python.org/3/library/stdtypes.html)
 -  [stack overflow](https://stackoverflow.com/questions/7784148/understanding-repr-function-in-python)
 -  [Dan Barders Amazing blog](https://dbader.org/blog/python-repr-vs-str)
+-  [Real Python](https://dbader.org/blog/python-repr-vs-str)
 -  UCD Python programing class
