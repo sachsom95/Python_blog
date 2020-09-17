@@ -131,10 +131,24 @@ str(y)
 # notice its not a string
 >> Bike(Fixie,Medium)
 repr(y)
-# a string representation
+# a string representation 
 >> "Bike('Fixie','Medium')"
 
 {% endhighligh %}
+
+Now if we look closely with `repr` we used `!r` this is used with f-strings in python and it will wrap the output in a `''` indicating its a string for example if we didn't use `!r` in above example our output will be 
+
+{% highligh python %}
+repr(y)
+>> "Bike(Fixie,Medium)"
+{% endhighlight %}
+instead we want
+
+{% highligh python %}
+repr(y)
+>> "Bike('Fixie','Medium')"
+{% endhighlight %}
+
 
 > One thing to add is that __repr__() need not be always a strict definition of a function. We can have whatever output we want. But its a general convention to have `__repr__ `to have a formal object definition while `__str__`to be the understandable output to an object.
 
