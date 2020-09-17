@@ -7,7 +7,7 @@ author: "Sachin Soman"
 comments: true
 ---
 
-Most of the time beginners and seasoned veterans of python try to debug their code using the trusty old `print()` statement especially, to peek into contents of an object. This is particularly true when we are working in an interactive environment like a jupyter notebook. An example of this may be to see the contents of a list after an append operation.  Let's take a very simple example where we try to see what happens when we append elements to a list and try to see it using `print()`
+Most of the time beginners and seasoned veterans of python try to debug their code using the trusty old `print()` statement,especially, to peek into contents of an object. This is particularly true when we are working in an interactive environment like a jupyter notebook. An example of this may be to see the contents of a list after an append operation.  Let's take a very simple example where we try to see what happens when we append elements to a list and try to see it using `print()`
 
 {% highlight ruby %}
 lst = list()
@@ -100,7 +100,7 @@ class Bike:
 
 object_bike = Bike("Fixie","Medium")
 repr(object_bike)
-
+# notice that the output is encased as a string
 >> "Bike('Fixie','Medium')"
 
 new_object = eval(repr(object_bike))
@@ -110,6 +110,31 @@ new_object.size
 >> "Medium"
 
 {% endhighlight %}
+
+Here when we used `repr` a developer can understand how the object was created and the developer can use the `eval()` function to recreate the object. One thing to note is that if we use `__str__` to create the same output it will not create the string equivalent hence cannot be used with `eval`.
+
+{% highligh python %}
+
+class Bike:
+    def __init__(self,brand,size):
+        self.brand = brand
+        self.size = size
+    
+    def __str__(self):
+        return f"Bike({self.brand},{self.size})"
+
+    def __repr__(self):
+        return f"Bike({self.brand!r},{self.size!r})"
+
+y = Bike("Fixie","Medium")
+str(y)
+# notice its not a string
+>> Bike(Fixie,Medium)
+repr(y)
+# a string representation
+>> "Bike('Fixie','Medium')"
+
+{% endhighligh %}
 
 > One thing to add is that __repr__() need not be always a strict definition of a function. We can have whatever output we want. But its a general convention to have `__repr__ `to have a formal object definition while `__str__`to be the understandable output to an object.
 
