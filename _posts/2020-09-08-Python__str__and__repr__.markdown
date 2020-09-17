@@ -113,7 +113,7 @@ new_object.size
 
 Here when we used `repr` a developer can understand how the object was created and the developer can use the `eval()` function to recreate the object. One thing to note is that if we use `__str__` to create the same output it will not create the string equivalent hence cannot be used with `eval`.
 
-{% highligh python %}
+{% highlight python %}
 
 class Bike:
     def __init__(self,brand,size):
@@ -134,7 +134,7 @@ repr(y)
 # a string representation 
 >> "Bike('Fixie','Medium')"
 
-{% endhighligh %}
+{% endhighlight %}
 
 Now if we look closely with `repr` we used `!r` this is used with f-strings in python and it will wrap the output in a `''` indicating its a string for example if we didn't use `!r` in above example our output will be 
 
@@ -142,7 +142,7 @@ Now if we look closely with `repr` we used `!r` this is used with f-strings in p
 
 repr(y)
 >> "Bike(Fixie,Medium)"
-{% endhighligh %}
+{% endhighlight %}
 
 instead we want
 
@@ -151,7 +151,7 @@ instead we want
 repr(y)
 >> "Bike('Fixie','Medium')"
 
-{% endhighligh %}
+{% endhighlight %}
 
 
 > One thing to add is that __repr__() need not be always a strict definition of a function. We can have whatever output we want. But its a general convention to have `__repr__ `to have a formal object definition while `__str__`to be the understandable output to an object.
