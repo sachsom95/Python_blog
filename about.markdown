@@ -9,6 +9,5 @@ do send an email to `sachin.soman@ucdconnect.ie` or put a pull request on my Git
 You can find the source code for Blog at GitHub:
 
 [Github](https://github.com/sachsom95/Python_blog)
-
-Also, Do check out my Networks blog [Get Good At Networks](https://sachsom95.github.io/Networks_blog/)
-
+[Website](www.sachinsoman.com)
+Lets connect: [Linkedin](https://www.linkedin.com/in/sachin-soman)
